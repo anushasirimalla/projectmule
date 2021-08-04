@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="commitFLow" doc:id="e8797b69-c07c-40db-93aa-cdda1fe38e04" >
+		<http:listener doc:name="Listener" doc:id="0ed6f42b-fb46-480f-b954-4ce0c5a5ffcf" config-ref="HTTP_Listener_config" path="/hello" allowedMethods="GET"/>
+		<set-payload value="for commit" doc:name="Set Payload" doc:id="118df0da-acf1-47c5-ab79-bf4983bee422" />
+	</flow>
+</mule>
